@@ -29,6 +29,7 @@ const (
   Completed Status = "Completed"
 )
 
+type Statuses []Status
 type Backlog []Story
 
 func AddStoryToBacklog(id uint32, title string, backlog *Backlog) Story {

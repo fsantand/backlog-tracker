@@ -18,7 +18,7 @@ backlog:
       done: false
     - id: 5
       title: Add new task through CLI
-      status: To Do
+      status: On Going
       done: false
     - id: 6
       title: Change status of task via CLI
