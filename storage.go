@@ -15,7 +15,8 @@ func GetBacklog() YamlStorage {
   state := YamlStorage{}
   dat, err:= os.ReadFile("./tasks.yaml")
   if err != nil {
-    panic(err)
+    state.Counter = 1
+    SaveBacklog(state.Backlog, state.Counter)
   }
   err = yaml.Unmarshal(dat, &state)
   return state
