@@ -38,7 +38,6 @@ func initialModel() model {
       backlogtracker.OnGoing,
       backlogtracker.OnReview,
       backlogtracker.Monitoring,
-      backlogtracker.Completed,
     },
     cursor: 0,
     actualView: ListChoice,
@@ -125,7 +124,7 @@ func ListView(m model) string {
   s := strings.Builder{}
   s.WriteString("Active backlog\n\n")
 
-  for i, task := range(m.backlog) {
+  for i, task := range(backlogtracker.FilterBacklog(m.backlog, m.statusChoice)) {
     actualTaskTitle := backlogtracker.DebugStory(task, true)
     if m.cursor == i {
       s.WriteString(fmt.Sprintf("  > %s", backlogtracker.Underline(actualTaskTitle)))
