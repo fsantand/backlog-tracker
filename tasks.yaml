@@ -1,0 +1,26 @@
+counter: 7
+backlog:
+    - id: 1
+      title: Store tasks in yaml
+      status: Completed
+      done: true
+    - id: 2
+      title: Add coloring to the status text
+      status: Completed
+      done: true
+    - id: 3
+      title: Show backlog as table
+      status: To Do
+      done: false
+    - id: 4
+      title: Set backlogs file as setting in CLI
+      status: To Do
+      done: false
+    - id: 5
+      title: Add new task through CLI
+      status: To Do
+      done: false
+    - id: 6
+      title: Change status of task via CLI
+      status: To Do
+      done: false
