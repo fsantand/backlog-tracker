@@ -152,7 +152,7 @@ func (m model) View() string {
   case AddChoice:
     return AddView(m)
   case StatusChangeChoice:
-    m.actualView = ListChoice
+    m.actualView = StatusChangeChoice
     return ListView(m)
   }
   return ListView(m)

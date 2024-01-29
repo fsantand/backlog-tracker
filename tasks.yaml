@@ -1,4 +1,4 @@
-counter: 7
+counter: 8
 backlog:
     - id: 1
       title: Store tasks in yaml
@@ -22,5 +22,9 @@ backlog:
       done: false
     - id: 6
       title: Change status of task via CLI
+      status: To Do
+      done: false
+    - id: 7
+      title: ASD
       status: To Do
       done: false
